@@ -9,45 +9,6 @@ package com.mycompany.tp03;
  * @author pc
  */
 
-class Prodi{
-    String nama;
-    
-    public void setNama(String nama){
-        this.nama = nama;
-    }
-    
-    public String getNama(){
-        return this.nama;
-    }
-}
-
-class Mahasiswa{
-    String nama;
-    Prodi prodi;
-    
-    public void setNama(String nama){
-        this.nama = nama;
-    }
-    
-    public void setProdi(Prodi prodi){
-        this.prodi = prodi;
-    }
-    
-    public String getNama(){
-        return this.nama;
-    }
-    
-    public String getProdi(){
-        return this.prodi.getNama();
-    }
-    
-    public void displayMahasiswa(){
-        System.out.println("\nNama Mahasiswa : " + this.getNama());
-        System.out.println("Dari Prodi : " + this.getProdi());
-    }
-    
-}
-
 public class Tp03 {
 
     public static void main(String[] args) {
@@ -67,6 +28,7 @@ public class Tp03 {
         mhs2.setNama("Nugroho Rahmanto");
         mhs2.setProdi(pr2);
         
+        // menampilkan data mahasiswa
         mhs1.displayMahasiswa();
         mhs2.displayMahasiswa();
     }
