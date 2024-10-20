@@ -13,13 +13,4 @@ public class YamahaMoi extends SepedaMotor {
         super(warna);
         this.ukuranTangki = 5;
     }
-    
-    @Override
-    public boolean jalan(){
-        if(super.jalan()){
-            System.out.println("Bensin akan habis pada " + super.CekKapanHabis());
-            return true;
-        }
-        return false;
-    }
 }

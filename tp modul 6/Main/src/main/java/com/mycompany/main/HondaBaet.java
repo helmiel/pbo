@@ -13,13 +13,4 @@ public class HondaBaet extends SepedaMotor{
         super(warna);
         this.ukuranTangki = 4;
     }
-    
-    @Override
-    public boolean jalan(){
-        if(super.jalan()){
-            System.out.println("Moto Baet akan habis bensin pada " + super.CekKapanHabis());
-            return true;
-        }
-        return false;
-    }
 }

@@ -44,11 +44,15 @@ public class Main {
         System.out.println("Status terbaru HondaBaet:");
         hb.isiTangkiFull();
         System.out.println("Waktu saat ini: " + waktu);
-        if(hb.jalan()){}
+        if(hb.jalan()){
+            System.out.println("Motor Baet akan habis bensin pada " + hb.CekKapanHabis());
+        }
         
         System.out.println("Status Terbaru YamahaMoi:");
         ym.isiTangkiFull();
         System.out.println("Waktu saat ini: " + waktu);
-        if(ym.jalan());
+        if(ym.jalan()){
+            System.out.println("Bensin akan habis pada " + ym.CekKapanHabis());
+        };
     }
 }
