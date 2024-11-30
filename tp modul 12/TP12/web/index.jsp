@@ -16,8 +16,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             <input type="submit" value="Kirim" />
         </form>
         <%
-            out.print(request.getAttribute("nim")+"<br />");
-            out.print(request.getAttribute("nama")+"<br />");
+            String nim = (String) request.getParameter("nim");
+            String nama = (String) request.getParameter("nama");
+            if (nim != null && nama != null){
+                out.print(request.getAttribute("nim")+"<br />");
+                out.print(request.getAttribute("nama")+"<br />");
+            }
         %>
         
     </body>

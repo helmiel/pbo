@@ -20,7 +20,7 @@ public class JDBC {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             con = DriverManager.getConnection(
-            "jdbc:mysql://localhost:3306/tp12_praktikan","root","");
+            "jdbc:mysql://localhost:3306/tp12_helmi","root","");
             stmt = con.createStatement();
             isConnected = true;
             message = "DB connected";
